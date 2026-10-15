@@ -1,0 +1,1262 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: SmartSused Core 1.0.0\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Domain: smartsused-core\n"
+
+#: admin/class-smartsused-admin.php
+msgid "SmartSused"
+msgstr ""
+
+#: admin/class-smartsused-admin.php
+msgid "Na zobrazenie tejto stránky nemáte dostatočné oprávnenia."
+msgstr ""
+
+#: includes/class-smartsused-core.php
+msgid "Bytové domy a objekty"
+msgstr ""
+
+#: includes/class-smartsused-core.php
+msgid "Bytový dom"
+msgstr ""
+
+#: includes/class-smartsused-core.php
+msgid "Objekty"
+msgstr ""
+
+#: includes/class-smartsused-core.php
+msgid "Objekt"
+msgstr ""
+
+#: includes/class-smartsused-core.php
+msgid "Pridať nový"
+msgstr ""
+
+#: includes/class-smartsused-core.php
+msgid "Pridať objekt"
+msgstr ""
+
+#: includes/class-smartsused-core.php
+msgid "Nový objekt"
+msgstr ""
+
+#: includes/class-smartsused-core.php
+msgid "Upraviť objekt"
+msgstr ""
+
+#: includes/class-smartsused-core.php
+msgid "Zobraziť objekt"
+msgstr ""
+
+#: includes/class-smartsused-core.php
+msgid "Všetky objekty"
+msgstr ""
+
+#: includes/class-smartsused-core.php
+msgid "Hľadať objekty"
+msgstr ""
+
+#: includes/class-smartsused-core.php
+msgid "Nenašli sa žiadne objekty."
+msgstr ""
+
+#: includes/class-smartsused-core.php
+msgid "V koši sa nenašli žiadne objekty."
+msgstr ""
+
+#: includes/class-smartsused-core.php
+msgid "Nadradený objekt:"
+msgstr ""
+
+#: includes/class-smartsused-core.php
+msgid "Obrázok objektu"
+msgstr ""
+
+#: includes/class-smartsused-core.php
+msgid "Nastaviť obrázok objektu"
+msgstr ""
+
+#: includes/class-smartsused-core.php
+msgid "Odstrániť obrázok objektu"
+msgstr ""
+
+#: includes/class-smartsused-core.php
+msgid "Použiť ako obrázok objektu"
+msgstr ""
+
+#: includes/class-smartsused-core.php
+msgid "Byty a nebytové priestory"
+msgstr ""
+
+#: includes/class-smartsused-core.php
+msgid "Byt / Nebytový priestor"
+msgstr ""
+
+#: includes/class-smartsused-core.php
+msgid "Jednotky"
+msgstr ""
+
+#: includes/class-smartsused-core.php
+msgid "Jednotka"
+msgstr ""
+
+#: includes/class-smartsused-core.php
+msgid "Pridať novú"
+msgstr ""
+
+#: includes/class-smartsused-core.php
+msgid "Pridať jednotku"
+msgstr ""
+
+#: includes/class-smartsused-core.php
+msgid "Nová jednotka"
+msgstr ""
+
+#: includes/class-smartsused-core.php
+msgid "Upraviť jednotku"
+msgstr ""
+
+#: includes/class-smartsused-core.php
+msgid "Zobraziť jednotku"
+msgstr ""
+
+#: includes/class-smartsused-core.php
+msgid "Všetky jednotky"
+msgstr ""
+
+#: includes/class-smartsused-core.php
+msgid "Hľadať jednotky"
+msgstr ""
+
+#: includes/class-smartsused-core.php
+msgid "Nenašli sa žiadne jednotky."
+msgstr ""
+
+#: includes/class-smartsused-core.php
+msgid "V koši sa nenašli žiadne jednotky."
+msgstr ""
+
+#: includes/class-smartsused-core.php
+msgid "Nadradená jednotka:"
+msgstr ""
+
+#: includes/class-smartsused-core.php
+msgid "Obrázok jednotky"
+msgstr ""
+
+#: includes/class-smartsused-core.php
+msgid "Nastaviť obrázok jednotky"
+msgstr ""
+
+#: includes/class-smartsused-core.php
+msgid "Odstrániť obrázok jednotky"
+msgstr ""
+
+#: includes/class-smartsused-core.php
+msgid "Použiť ako obrázok jednotky"
+msgstr ""
+
+#: includes/class-smartsused-core.php
+msgid "Správca"
+msgstr ""
+
+#: includes/class-smartsused-core.php
+msgid "Vlastník"
+msgstr ""
+
+#: includes/class-smartsused-core.php
+msgid "Nájomca"
+msgstr ""
+
+#: api/class-smartsused-rest-api.php
+msgid "Nesprávny e-mail alebo heslo."
+msgstr ""
+
+#: api/class-smartsused-rest-api.php
+msgid "Google token je neplatný."
+msgstr ""
+
+#: api/class-smartsused-rest-api.php
+msgid "Prihlásenie cez Google nie je nakonfigurované."
+msgstr ""
+
+#: api/class-smartsused-admin-api.php
+msgid "Google Client ID je nastavený v konfigurácii servera a nemožno ho meniť v aplikácii."
+msgstr ""
+
+#: api/class-smartsused-admin-api.php
+msgid "Zadajte platné Google OAuth Web Client ID."
+msgstr ""
+
+#: api/class-smartsused-admin-api.php
+msgid "Bytový dom sa nenašiel."
+msgstr ""
+
+#: api/class-smartsused-admin-api.php
+msgid "Bytový dom sa nepodarilo aktualizovať."
+msgstr ""
+
+#: api/class-smartsused-rest-api.php
+msgid "Google token je neplatný alebo nebol vystavený pre túto aplikáciu."
+msgstr ""
+
+#: api/class-smartsused-rest-api.php
+msgid "Prístup zamietnutý. Váš e-mail nie je registrovaný v systéme správcu."
+msgstr ""
+
+#: api/class-smartsused-rest-api.php
+msgid "Používateľ sa nenašiel."
+msgstr ""
+
+#: api/class-smartsused-rest-api.php
+msgid "Google token sa nepodarilo overiť."
+msgstr ""
+
+#: api/class-smartsused-rest-api.php
+msgid "Odpoveď služby Google sa nepodarilo spracovať."
+msgstr ""
+
+#: api/class-smartsused-rest-api.php
+msgid "Prihlasovací token sa nepodarilo vytvoriť."
+msgstr ""
+
+#: includes/class-smartsused-jwt.php
+msgid "Používateľa pre prihlasovací token sa nepodarilo overiť."
+msgstr ""
+
+#: includes/class-smartsused-jwt.php
+msgid "Podpisovací kľúč pre prihlasovacie tokeny nie je platný."
+msgstr ""
+
+#: includes/class-smartsused-jwt.php
+msgid "Platnosť licencie neumožňuje vytvoriť prihlasovací token."
+msgstr ""
+
+#: includes/class-smartsused-jwt.php
+msgid "Dátum platnosti licencie pre prihlasovací token nie je platný."
+msgstr ""
+
+#: includes/class-smartsused-jwt.php
+msgid "Prihlasovací token sa nepodarilo bezpečne pripraviť."
+msgstr ""
+
+#: includes/class-smartsused-jwt.php
+msgid "Prihlasovací token je neplatný alebo jeho platnosť vypršala."
+msgstr ""
+
+#: includes/class-smartsused-validation.php
+msgid "Telefónne číslo musí byť v platnom slovenskom alebo českom formáte."
+msgstr ""
+
+#: includes/class-smartsused-validation.php
+msgid "PSČ musí obsahovať päť číslic, napríklad 974 01."
+msgstr ""
+
+#: includes/class-smartsused-validation.php
+msgid "Slovenský IBAN je neplatný alebo má nesprávny kontrolný súčet."
+msgstr ""
+
+#: api/class-smartsused-rest-api.php
+msgid "Prístup zamietnutý. Váš e-mail nie je registrovaný v systéme správcu."
+msgstr ""
+
+msgid "Nahlásiť poruchu"
+msgstr ""
+
+msgid "Používateľ nemá prístup k tomuto objektu."
+msgstr ""
+
+#: includes/class-smartsused-secure-files.php
+msgid "Chránený priečinok na súbory nie je bezpečný."
+msgstr ""
+
+#: includes/class-smartsused-secure-files.php
+msgid "Chránený priečinok na súbory sa nepodarilo vytvoriť."
+msgstr ""
+
+#: includes/class-smartsused-secure-files.php
+msgid "Konfigurácia ochrany súborov nie je bezpečná."
+msgstr ""
+
+#: includes/class-smartsused-secure-files.php
+msgid "Ochranu priečinka so súbormi sa nepodarilo nastaviť."
+msgstr ""
+
+#: includes/class-smartsused-secure-files.php
+msgid "Ochranný súbor priečinka sa nepodarilo vytvoriť."
+msgstr ""
+
+#: includes/class-smartsused-secure-files.php
+msgid "Databázové tabuľky SmartSused sa nepodarilo vytvoriť."
+msgstr ""
+
+#: includes/class-smartsused-secure-files.php
+msgid "Na zmenu priradenia rezidenta k bytu nemáte oprávnenie."
+msgstr ""
+
+#: includes/class-smartsused-secure-files.php
+msgid "Zadaný rezident, byt alebo typ priradenia nie je platný."
+msgstr ""
+
+#: includes/class-smartsused-secure-files.php
+msgid "Priradenie rezidenta k bytu sa nepodarilo uložiť."
+msgstr ""
+
+#: includes/class-smartsused-secure-files.php
+msgid "Nahraný súbor alebo bytová jednotka nie sú platné."
+msgstr ""
+
+#: includes/class-smartsused-secure-files.php
+msgid "Tento typ súboru nie je povolený."
+msgstr ""
+
+#: includes/class-smartsused-secure-files.php
+msgid "Súbor je väčší ako povolený limit."
+msgstr ""
+
+#: includes/class-smartsused-secure-files.php
+msgid "Overenie typu súboru nie je na serveri dostupné."
+msgstr ""
+
+#: includes/class-smartsused-secure-files.php
+msgid "Obsah súboru nezodpovedá jeho prípone."
+msgstr ""
+
+#: includes/class-smartsused-secure-files.php
+msgid "Chránené úložisko súborov nie je dostupné."
+msgstr ""
+
+#: includes/class-smartsused-secure-files.php
+msgid "Bezpečný názov súboru sa nepodarilo vytvoriť."
+msgstr ""
+
+#: includes/class-smartsused-secure-files.php
+msgid "Jedinečný názov súboru sa nepodarilo vytvoriť."
+msgstr ""
+
+#: includes/class-smartsused-secure-files.php
+msgid "Súbor sa nepodarilo bezpečne uložiť."
+msgstr ""
+
+#: includes/class-smartsused-secure-files.php
+msgid "Záznam o uloženom súbore sa nepodarilo vytvoriť."
+msgstr ""
+
+#: includes/class-smartsused-secure-files.php
+msgid "Nemáte oprávnenie na zobrazenie tohto súboru."
+msgstr ""
+
+#: api/class-smartsused-owner-import.php
+msgid "Server nepovoľuje nastaviť časový limit importu."
+msgstr ""
+
+#: api/class-smartsused-owner-import.php
+msgid "Nahrajte platný CSV súbor s príponou .csv."
+msgstr ""
+
+#: api/class-smartsused-owner-import.php
+msgid "Rola vlastníka nie je nakonfigurovaná. Znova aktivujte SmartSused Core."
+msgstr ""
+
+#: api/class-smartsused-owner-import.php
+msgid "CSV súbor sa nepodarilo otvoriť."
+msgstr ""
+
+#: api/class-smartsused-owner-import.php
+msgid "CSV súbor sa nepodarilo celý prečítať."
+msgstr ""
+
+#: api/class-smartsused-owner-import.php
+msgid "CSV musí obsahovať stĺpce v poradí: meno;priezvisko;email;telefon;nazov_domu;cislo_bytu;vchod."
+msgstr ""
+
+#: api/class-smartsused-owner-import.php
+msgid "Bol prekročen maximálny počet dátových riadkov v CSV súbore."
+msgstr ""
+
+#: api/class-smartsused-owner-import.php
+msgid "Riadok musí obsahovať presne sedem stĺpcov."
+msgstr ""
+
+#: api/class-smartsused-owner-import.php
+msgid "Vyplňte platné meno, priezvisko, e-mail, názov domu, číslo bytu a vchod."
+msgstr ""
+
+#: api/class-smartsused-owner-import.php
+msgid "Telefónne číslo musí byť v platnom slovenskom alebo českom formáte."
+msgstr ""
+
+#: api/class-smartsused-owner-import.php
+msgid "Bytový dom s uvedeným názvom sa nenašiel alebo nie je publikovaný."
+msgstr ""
+
+#: api/class-smartsused-owner-import.php
+msgid "Názov bytového domu nie je jednoznačný. Rozlíšte dom úplným názvom."
+msgstr ""
+
+#: api/class-smartsused-owner-import.php
+msgid "Bytová jednotka s uvedeným domom, číslom bytu a vchodom sa nenašla."
+msgstr ""
+
+#: api/class-smartsused-owner-import.php
+msgid "Bytová jednotka nie je jednoznačná. Skontrolujte názov domu, číslo bytu a vchod."
+msgstr ""
+
+#: includes/class-smartsused-manager-scope.php
+msgid "Priradenie správcov k domu"
+msgstr ""
+
+#: includes/class-smartsused-manager-scope.php
+msgid "Priradenie správcov"
+msgstr ""
+
+#: includes/class-smartsused-manager-scope.php
+msgid "Na správu priradení správcov nemáte oprávnenie."
+msgstr ""
+
+#: includes/class-smartsused-manager-scope.php
+msgid "Priradenie správcov k bytovým domom"
+msgstr ""
+
+#: includes/class-smartsused-manager-scope.php
+msgid "Administrátori WordPressu môžu každému správcovi priradiť jeden alebo viac publikovaných bytových domov."
+msgstr ""
+
+#: includes/class-smartsused-manager-scope.php
+msgid "Priradenie správcu bolo uložené."
+msgstr ""
+
+#: includes/class-smartsused-manager-scope.php
+msgid "V systéme zatiaľ nie sú účty správcov."
+msgstr ""
+
+#: includes/class-smartsused-manager-scope.php
+msgid "Priradený bytový dom"
+msgstr ""
+
+#: includes/class-smartsused-manager-scope.php
+msgid "Bez priradeného domu"
+msgstr ""
+
+#: includes/class-smartsused-manager-scope.php
+msgid "Na zmenu priradenia správcu nemáte oprávnenie."
+msgstr ""
+
+#: includes/class-smartsused-manager-scope.php
+msgid "Vybraný účet nie je platný správca."
+msgstr ""
+
+#: includes/class-smartsused-manager-scope.php
+msgid "Požadovaný záznam sa nenašiel."
+msgstr ""
+
+#: includes/class-smartsused-manager-scope.php
+msgid "K tejto operácii nemáte oprávnenie pre priradené bytové domy."
+msgstr ""
+
+#: api/class-smartsused-import-template.php
+msgid "Šablónu možno vytvoriť iba pre bytový dom priradený k vášmu účtu."
+msgstr ""
+
+#: api/class-smartsused-unit-import.php
+msgid "Importovať možno iba jednotky bytových domov priradených k vášmu účtu."
+msgstr ""
+
+#: api/class-smartsused-owner-import.php
+msgid "Importovať možno iba obyvateľov bytových domov priradených k vášmu účtu."
+msgstr ""
+
+#: includes/class-smartsused-secure-files.php
+msgid "Správcovi možno priradiť rezidentov iba k jednotkám jeho priradených bytových domov."
+msgstr ""
+
+#: includes/class-smartsused-secure-files.php
+msgid "Súbor možno priradiť iba k jednotke vášho bytového domu."
+msgstr ""
+
+#: api/class-smartsused-owner-import.php
+msgid "E-mail je príliš dlhý na použitie ako prihlasovacie meno WordPressu."
+msgstr ""
+
+#: api/class-smartsused-owner-import.php
+msgid "Prihlasovacie meno zhodné s e-mailom už používa iný účet."
+msgstr ""
+
+#: api/class-smartsused-owner-import.php
+msgid "Používateľa sa nepodarilo vytvoriť."
+msgstr ""
+
+#: api/class-smartsused-owner-import.php
+msgid "Existujúci používateľ sa nepodarilo načítať."
+msgstr ""
+
+#: api/class-smartsused-owner-import.php
+msgid "Používateľovi sa nepodarilo priradiť rolu vlastníka."
+msgstr ""
+
+#: api/class-smartsused-owner-import.php
+msgid "Telefónne číslo sa nepodarilo uložiť."
+msgstr ""
+
+#: api/class-smartsused-owner-import.php
+msgid "Vzťah vlastníka k bytu sa nepodarilo uložiť."
+msgstr ""
+
+#: api/class-smartsused-owner-import.php
+msgid "Import bol dokončený. Úspešne importované riadky: %1$d, existujúce vzťahy: %2$d, chybné riadky: %3$d."
+msgstr ""
+
+#: api/class-smartsused-owner-import.php
+msgid "Na import vlastníkov nemáte oprávnenie."
+msgstr ""
+
+#: api/class-smartsused-unit-import.php
+msgid "Server nepovoľuje nastaviť časový limit importu."
+msgstr ""
+
+#: api/class-smartsused-unit-import.php
+msgid "Nahrajte platný CSV súbor s príponou .csv."
+msgstr ""
+
+#: api/class-smartsused-unit-import.php
+msgid "Typ bytovej jednotky nie je dostupný. Skontrolujte, či je SmartSused Core správne aktivovaný."
+msgstr ""
+
+#: api/class-smartsused-unit-import.php
+msgid "Databázové tabuľky WordPressu nepodporujú bezpečné transakcie. Import jednotiek bol zastavený."
+msgstr ""
+
+#: api/class-smartsused-unit-import.php
+msgid "CSV súbor sa nepodarilo otvoriť."
+msgstr ""
+
+#: api/class-smartsused-unit-import.php
+msgid "CSV súbor sa nepodarilo celý prečítať."
+msgstr ""
+
+#: api/class-smartsused-unit-import.php
+msgid "CSV musí obsahovať stĺpce v poradí: nazov_domu;cislo_bytu;poschodie;vchod."
+msgstr ""
+
+#: api/class-smartsused-unit-import.php
+msgid "Bol prekročen maximálny počet dátových riadkov v CSV súbore."
+msgstr ""
+
+#: api/class-smartsused-unit-import.php
+msgid "Riadok musí obsahovať presne štyri stĺpce."
+msgstr ""
+
+#: api/class-smartsused-unit-import.php
+msgid "Názov bytového domu, číslo bytu a vchod sú povinné."
+msgstr ""
+
+#: api/class-smartsused-unit-import.php
+msgid "Bytový dom s názvom %s neexistuje. Jednotku nebolo možné naimportovať."
+msgstr ""
+
+#: api/class-smartsused-unit-import.php
+msgid "Databázovú transakciu sa nepodarilo spustiť."
+msgstr ""
+
+#: api/class-smartsused-unit-import.php
+msgid "Jednotku sa nepodarilo bezpečne rezervovať na zápis."
+msgstr ""
+
+#: api/class-smartsused-unit-import.php
+msgid "Bytovú jednotku sa nepodarilo vytvoriť."
+msgstr ""
+
+#: api/class-smartsused-unit-import.php
+msgid "Meta údaje bytovej jednotky sa nepodarilo uložiť; zmeny riadka boli vrátené."
+msgstr ""
+
+#: api/class-smartsused-unit-import.php
+msgid "Bytovú jednotku sa nepodarilo potvrdiť v databáze."
+msgstr ""
+
+#: api/class-smartsused-unit-import.php
+msgid "Import bol dokončený. Vytvorené jednotky: %1$d, preskočené duplicity: %2$d, chybné riadky: %3$d."
+msgstr ""
+
+#: api/class-smartsused-unit-import.php
+msgid "Na hromadný import bytových jednotiek nemáte oprávnenie."
+msgstr ""
+
+#: includes/class-smartsused-license.php
+msgid "Aplikácia SmartSused nie je povolená v lokálnom prostredí (localhost)."
+msgstr ""
+
+#: includes/class-smartsused-license.php
+msgid "Doménu webu sa nepodarilo bezpečne určiť."
+msgstr ""
+
+#: includes/class-smartsused-license.php
+msgid "Požiadavku na overenie licencie sa nepodarilo pripraviť."
+msgstr ""
+
+#: includes/class-smartsused-license.php
+msgid "Na overenie licencie je potrebné aktívne internetové pripojenie. Prihlásenie je zablokované."
+msgstr ""
+
+#: includes/class-smartsused-license.php
+msgid "Licenčný server vrátil neplatnú odpoveď. Prihlásenie je zablokované."
+msgstr ""
+
+#: includes/class-smartsused-license.php
+msgid "Aplikácia nie je licencovaná pre túto doménu. Kontaktujte poskytovateľa SmartSused."
+msgstr ""
+
+#: includes/class-smartsused-license.php
+msgid "Licenčný server neposkytol platný podpisovací kľúč. Prihlásenie je zablokované."
+msgstr ""
+
+#: includes/class-smartsused-license.php
+msgid "Licenčný podpisovací kľúč sa nepodarilo bezpečne uložiť."
+msgstr ""
+
+#: admin/class-smartsused-admin.php
+msgid "Na zmenu licencie nemáte dostatočné oprávnenia."
+msgstr ""
+
+#: admin/class-smartsused-admin.php
+msgid "Zadajte platný licenčný kľúč."
+msgstr ""
+
+#: admin/class-smartsused-admin.php
+msgid "Licencia bola úspešne overená a aktivovaná."
+msgstr ""
+
+#: admin/class-smartsused-admin.php
+msgid "Licencia SmartSused"
+msgstr ""
+
+#: admin/class-smartsused-admin.php
+msgid "Licencia"
+msgstr ""
+
+#: admin/class-smartsused-admin.php
+msgid "Zadajte licenčný kľúč pridelený správcom SmartSused. Kľúč sa bezpečne uloží v databáze WordPressu a overí sa online."
+msgstr ""
+
+#: admin/class-smartsused-admin.php
+msgid "Licenčný kľúč"
+msgstr ""
+
+#: admin/class-smartsused-admin.php
+msgid "Kľúč je uložený. Zadajte ho znova na opätovnú aktiváciu."
+msgstr ""
+
+#: admin/class-smartsused-admin.php
+msgid "Napr. SS-ABCD-1234-XYZ"
+msgstr ""
+
+#: admin/class-smartsused-admin.php
+msgid "Platnosť licencie do"
+msgstr ""
+
+#: admin/class-smartsused-admin.php
+msgid "Uložiť a aktivovať"
+msgstr ""
+
+#: includes/class-smartsused-core.php
+msgid "ID bytového domu priradeného k jednotke."
+msgstr ""
+
+#: includes/class-smartsused-core.php
+msgid "Poschodie jednotky."
+msgstr ""
+
+#: includes/class-smartsused-core.php
+msgid "Vchod jednotky."
+msgstr ""
+
+#: includes/class-smartsused-core.php
+msgid "Nemáte oprávnenie upraviť túto bytovú jednotku."
+msgstr ""
+
+#: includes/class-smartsused-core.php
+msgid "Vybraný bytový dom neexistuje alebo nie je publikovaný."
+msgstr ""
+
+#: api/class-smartsused-import-template.php
+msgid "Na stiahnutie CSV šablóny musíte byť prihlásený ako správca SmartSused."
+msgstr ""
+
+#: api/class-smartsused-tenant-invites.php
+msgid "Tabuľku pozvánok SmartSused sa nepodarilo vytvoriť."
+msgstr ""
+
+#: api/class-smartsused-tenant-invites.php
+msgid "Zadajte platný e-mail a bytovú jednotku."
+msgstr ""
+
+#: api/class-smartsused-tenant-invites.php
+msgid "Pre tento e-mail už účet existuje. Nájomca sa môže prihlásiť alebo obnoviť heslo."
+msgstr ""
+
+#: api/class-smartsused-tenant-invites.php
+msgid "Za poslednú hodinu ste odoslali príliš veľa pozvánok. Skúste to neskôr."
+msgstr ""
+
+#: api/class-smartsused-tenant-invites.php
+msgid "Bezpečný pozývací token sa nepodarilo vytvoriť."
+msgstr ""
+
+#: api/class-smartsused-tenant-invites.php
+msgid "Pozvánku sa nepodarilo bezpečne uložiť."
+msgstr ""
+
+#: api/class-smartsused-tenant-invites.php
+msgid "Pozvánka do aplikácie SmartSused"
+msgstr ""
+
+#: api/class-smartsused-tenant-invites.php
+msgid "Vlastník bytu vás pozýva do aplikácie SmartSused. Kliknutím na tento odkaz dokončíte svoju registráciu: https://smartsused.sk"
+msgstr ""
+
+#: api/class-smartsused-tenant-invites.php
+msgid "E-mail s pozvánkou sa nepodarilo odoslať. Skontrolujte nastavenie odosielania e-mailov."
+msgstr ""
+
+#: api/class-smartsused-tenant-invites.php
+msgid "Pozvánka bola odoslaná na zadaný e-mail."
+msgstr ""
+
+#: api/class-smartsused-tenant-invites.php
+msgid "Pozývací odkaz alebo heslo nie je platné. Heslo musí mať aspoň 12 znakov."
+msgstr ""
+
+#: api/class-smartsused-tenant-invites.php
+msgid "Rola nájomcu nie je nakonfigurovaná. Skontrolujte aktiváciu SmartSused Core."
+msgstr ""
+
+#: api/class-smartsused-tenant-invites.php
+msgid "Účet sa nepodarilo priradiť k bytu. Pozvánka zostala nevyužitá; skúste to znova."
+msgstr ""
+
+#: api/class-smartsused-tenant-invites.php
+msgid "Registráciu sa nepodarilo dokončiť. Pozvánka nebola potvrdená; skúste to znova."
+msgstr ""
+
+#: api/class-smartsused-tenant-invites.php
+msgid "Registrácia nájomcu bola úspešná. Teraz sa môžete prihlásiť."
+msgstr ""
+
+#: api/class-smartsused-tenant-invites.php
+msgid "Pozvánka je neplatná, už bola použitá alebo jej platnosť vypršala."
+msgstr ""
+
+#: api/class-smartsused-tenant-invites.php
+msgid "Na pozvanie nájomcu musíte byť vlastníkom vybranej bytovej jednotky."
+msgstr ""
+
+#: api/class-smartsused-tenant-invites.php
+msgid "Úložisko pozvánok momentálne nie je dostupné alebo nepodporuje bezpečný zápis."
+msgstr ""
+
+#: api/class-smartsused-tenant-invites.php
+msgid "Nájomca už nie je priradený k tejto bytovej jednotke."
+msgstr ""
+
+#: api/class-smartsused-tenant-invites.php
+msgid "Nájomca bol odobratý z bytovej jednotky."
+msgstr ""
+
+#: api/class-smartsused-property-import.php
+msgid "CSV musí obsahovať stĺpce v poradí: nazov_domu;adresa."
+msgstr ""
+
+#: api/class-smartsused-property-import.php
+msgid "Riadok musí obsahovať presne dva stĺpce."
+msgstr ""
+
+#: api/class-smartsused-property-import.php
+msgid "Vyplňte názov domu aj jeho adresu."
+msgstr ""
+
+#: api/class-smartsused-property-import.php
+msgid "Bytový dom sa nepodarilo vytvoriť."
+msgstr ""
+
+#: api/class-smartsused-property-import.php
+msgid "Import bol dokončený. Vytvorené domy: %1$d, preskočené duplicity: %2$d, chybné riadky: %3$d."
+msgstr ""
+
+#: api/class-smartsused-owner-management.php
+msgid "Zoznam priradených bytov sa nepodarilo načítať."
+msgstr ""
+
+#: api/class-smartsused-owner-management.php
+msgid "Neznámy bytový dom"
+msgstr ""
+
+#: api/class-smartsused-owner-management.php
+msgid "Vyberte platný publikovaný bytový dom."
+msgstr ""
+
+#: api/class-smartsused-owner-management.php
+msgid "Voľné bytové jednotky sa nepodarilo načítať."
+msgstr ""
+
+#: api/class-smartsused-owner-management.php
+msgid "Skontrolujte meno, priezvisko, e-mail, telefón a vybraný byt."
+msgstr ""
+
+#: api/class-smartsused-owner-management.php
+msgid "Vybraný byt nie je dostupný."
+msgstr ""
+
+#: api/class-smartsused-owner-management.php
+msgid "Vlastníka sa nepodarilo bezpečne pripraviť na zápis. Skúste to znova."
+msgstr ""
+
+#: api/class-smartsused-owner-management.php
+msgid "Vybraný byt už má priradeného vlastníka alebo nájomcu."
+msgstr ""
+
+#: api/class-smartsused-owner-management.php
+msgid "E-mail sa už používa ako prihlasovacie meno iného účtu."
+msgstr ""
+
+#: api/class-smartsused-owner-management.php
+msgid "Účet vlastníka sa nepodarilo vytvoriť."
+msgstr ""
+
+#: api/class-smartsused-owner-management.php
+msgid "Účet vlastníka sa nepodarilo načítať."
+msgstr ""
+
+#: api/class-smartsused-owner-management.php
+msgid "Vlastníka sa nepodarilo priradiť k bytu."
+msgstr ""
+
+#: api/class-smartsused-owner-management.php
+msgid "Telefónne číslo sa nepodarilo uložiť; priradenie vlastníka bolo zrušené."
+msgstr ""
+
+#: api/class-smartsused-owner-management.php
+msgid "Vlastník bol vytvorený a priradený k bytu, ale odkaz na nastavenie hesla sa nepodarilo vytvoriť."
+msgstr ""
+
+#: api/class-smartsused-owner-management.php
+msgid "Váš účet SmartSused je pripravený"
+msgstr ""
+
+#: api/class-smartsused-owner-management.php
+msgid "Vlastník bol vytvorený a priradený k bytu, ale uvítací e-mail sa nepodarilo odoslať. Skontrolujte nastavenie e-mailov na serveri."
+msgstr ""
+
+#: api/class-smartsused-owner-management.php
+msgid "Vlastník bol pridaný. Uvítací e-mail s odkazom na nastavenie hesla bol odoslaný."
+msgstr ""
+
+#: api/class-smartsused-owner-management.php
+msgid "Na správu vlastníkov nemáte oprávnenie."
+msgstr ""
+
+#: api/class-smartsused-property-import.php
+msgid "Na import bytových domov nemáte oprávnenie."
+msgstr ""
+
+#: api/class-smartsused-owner-management.php
+msgid "Dobrý deň, %1$s,\n\nsprávca vám vytvoril účet v aplikácii SmartSused a priradil bytovú jednotku.\n\nAk chcete nastaviť heslo a prihlásiť sa, otvorte tento odkaz:\n%2$s\n\nAk ste túto správu neočakávali, kontaktujte správcu."
+msgstr ""
+
+#: api/class-smartsused-import-file.php
+msgid "Kontrola typu nahraného súboru nie je dostupná. Aktivujte PHP rozšírenie Fileinfo."
+msgstr ""
+
+#: api/class-smartsused-import-file.php
+msgid "Nahrajte platný CSV alebo Excel súbor s príponou .csv alebo .xlsx do veľkosti 5 MiB."
+msgstr ""
+
+#: api/class-smartsused-import-file.php
+msgid "Čítanie súborov Excel nie je dostupné. Skontrolujte PhpSpreadsheet a PHP rozšírenia ZIP a GD."
+msgstr ""
+
+#: api/class-smartsused-import-file.php
+msgid "Excel súbor obsahuje priveľa dát na bezpečné spracovanie."
+msgstr ""
+
+#: api/class-smartsused-import-file.php
+msgid "Excel súbor obsahuje viac stĺpcov, ako povoľuje zvolený import."
+msgstr ""
+
+#: api/class-smartsused-import-file.php
+msgid "Excel súbor musí obsahovať práve jeden viditeľný pracovný hárok."
+msgstr ""
+
+#: api/class-smartsused-import-file.php
+msgid "Nahraný súbor sa nepodarilo prečítať."
+msgstr ""
+
+#: api/class-smartsused-import-file.php
+msgid "Súbor je poškodený alebo nemá podporovaný formát CSV/Excel."
+msgstr ""
+
+#: api/class-smartsused-import-file.php
+msgid "Súbor prekročil maximálny počet %d dátových riadkov."
+msgstr ""
+
+#: api/class-smartsused-property-import.php
+#: api/class-smartsused-unit-import.php
+msgid "Nahrajte platný súbor s príponou .csv alebo .xlsx."
+msgstr ""
+
+#: api/class-smartsused-property-import.php
+msgid "Súbor musí obsahovať stĺpce v poradí: Názov bytového domu;Adresa."
+msgstr ""
+
+#: api/class-smartsused-unit-import.php
+msgid "Súbor musí obsahovať stĺpce v poradí: Názov bytového domu;Číslo bytu;Poschodie;Vchod."
+msgstr ""
+
+#: api/class-smartsused-import-template.php
+msgid "Požadovaný typ Excel šablóny nie je podporovaný."
+msgstr ""
+
+#: api/class-smartsused-import-template.php
+msgid "Generovanie Excel súborov nie je dostupné. Skontrolujte PhpSpreadsheet a PHP rozšírenia ZIP a GD."
+msgstr ""
+
+#: api/class-smartsused-import-template.php
+msgid "Dom a typ rezidenta možno zadať iba pri šablóne vlastníkov a nájomcov."
+msgstr ""
+
+#: api/class-smartsused-import-template.php
+msgid "Typ rezidenta musí byť owner alebo tenant."
+msgstr ""
+
+#: api/class-smartsused-import-template.php
+msgid "Vybraný bytový dom neexistuje alebo nie je publikovaný."
+msgstr ""
+
+#: api/class-smartsused-import-template.php
+msgid "Bytové jednotky pre zvolený dom sa nepodarilo načítať."
+msgstr ""
+
+#: api/class-smartsused-import-template.php
+msgid "Dom obsahuje viac ako %d bytových jednotiek; kontextovú šablónu nemožno bezpečne vytvoriť."
+msgstr ""
+
+#: api/class-smartsused-import-template.php
+msgid "Číslo bytu / Jednotka"
+msgstr ""
+
+#: api/class-smartsused-import-template.php
+msgid "Bytová jednotka"
+msgstr ""
+
+#: api/class-smartsused-import-template.php
+msgid "Vyberte bytovú jednotku zo zvoleného domu."
+msgstr ""
+
+#: api/class-smartsused-import-template.php
+msgid "Vyberte byt zo zoznamu"
+msgstr ""
+
+#: api/class-smartsused-import-template.php
+msgid "Vyberte jednotku z rozbaľovacieho zoznamu."
+msgstr ""
+
+#: api/class-smartsused-import-template.php
+msgid "Pre tento dom zatiaľ nie sú evidované publikované bytové jednotky."
+msgstr ""
+
+#: api/class-smartsused-import-template.php
+msgid "Import rezidentov pre dom %1$s, adresa: %2$s."
+msgstr ""
+
+#: api/class-smartsused-import-template.php
+msgid "Byt %s"
+msgstr ""
+
+#: api/class-smartsused-import-template.php
+msgid "Vchod %1$s - Byt %2$s"
+msgstr ""
+
+#: api/class-smartsused-import-template.php
+msgid "Zadajte platnú e-mailovú adresu v tvare meno@domena.sk."
+msgstr ""
+
+#: api/class-smartsused-import-template.php
+msgid "Neplatný e-mail"
+msgstr ""
+
+#: api/class-smartsused-import-template.php
+msgid "E-mail musí obsahovať jednu zavináč a názov domény s bodkou."
+msgstr ""
+
+#: api/class-smartsused-import-template.php
+msgid "Zadajte telefónne číslo s dĺžkou 7 až 20 znakov. Povolené sú číslice a jedno úvodné plus."
+msgstr ""
+
+#: api/class-smartsused-import-template.php
+msgid "Neplatný telefón"
+msgstr ""
+
+#: api/class-smartsused-import-template.php
+msgid "Telefón môže obsahovať iba číslice a najviac jedno plus na začiatku."
+msgstr ""
+
+#: api/class-smartsused-owner-import.php
+msgid "Súbor musí obsahovať stĺpce v tomto poradí: Meno;Priezvisko;E-mail;Telefón;Číslo bytu;Typ obyvateľa."
+msgstr ""
+
+#: api/class-smartsused-owner-import.php
+msgid "Súbor musí obsahovať stĺpce v tomto poradí: Názov bytového domu;Meno;Priezvisko;E-mail;Telefón;Číslo bytu;Typ obyvateľa."
+msgstr ""
+
+#: includes/class-smartsused-manager-scope.php
+msgid "Podržte Ctrl (Windows) alebo Command (Mac), aby ste vybrali viac domov. Bez výberu nebude mať správca prístup k domu."
+msgstr ""
+
+#: includes/class-smartsused-manager-scope.php
+msgid "Jeden z vybraných bytových domov neexistuje alebo nie je publikovaný."
+msgstr ""
+
+#: api/class-smartsused-import-template.php
+msgid "K účtu správcu nie je priradený žiadny publikovaný bytový dom."
+msgstr ""
+
+#: api/class-smartsused-import-template.php
+msgid "Pre vytvorenie šablóny nie sú dostupné publikované bytové domy."
+msgstr ""
+
+#: api/class-smartsused-import-template.php
+msgid "Viac priradených bytových domov má rovnaký názov. Premenujte domy, aby ich bolo možné jednoznačne vybrať."
+msgstr ""
+
+#: api/class-smartsused-import-template.php
+msgid "Zoznam bytových domov pre šablónu sa nepodarilo načítať."
+msgstr ""
+
+#: api/class-smartsused-import-template.php
+msgid "Zoznam bytových domov je príliš veľký na bezpečné vytvorenie šablóny."
+msgstr ""
+
+#: api/class-smartsused-import-template.php
+msgid "Vyberte bytový dom priradený k vášmu účtu."
+msgstr ""
+
+#: api/class-smartsused-import-template.php
+msgid "Vyberte bytový dom zo zoznamu"
+msgstr ""
+
+#: api/class-smartsused-owner-import.php
+msgid "Bytový dom sa nenašiel alebo nie je priradený k vášmu účtu."
+msgstr ""
+
+#: api/class-smartsused-owner-import.php
+msgid "Názov bytového domu nie je jednoznačný. Vyberte presný názov z rozbaľovacieho zoznamu."
+msgstr ""
+
+#: api/class-smartsused-owner-import.php
+msgid "Zoznam bytových domov je príliš veľký na bezpečný import."
+msgstr ""
+
+#: api/class-smartsused-owner-import.php
+msgid "Zoznam bytových domov sa nepodarilo načítať."
+msgstr ""
+
+#: api/class-smartsused-owner-import.php
+msgid "Zoznam bytov pre zvolený dom sa nepodarilo načítať."
+msgstr ""
+
+#: api/class-smartsused-owner-import.php
+msgid "Dom obsahuje priveľa bytov na spracovanie kontextovej šablóny."
+msgstr ""
+
+#: api/class-smartsused-owner-import.php
+msgid "Vyberte bytovú jednotku z rozbaľovacieho zoznamu pre zvolený dom."
+msgstr ""
+
+#: api/class-smartsused-owner-import.php
+msgid "Zvolený byt nie je jednoznačný. Kontaktujte správcu domu."
+msgstr ""
+
+#: api/class-smartsused-import-template.php
+msgid "Zadajte celé číslo poschodia."
+msgstr ""
+
+#: api/class-smartsused-import-template.php
+msgid "Neplatné poschodie"
+msgstr ""
+
+#: api/class-smartsused-import-template.php
+msgid "Poschodie musí byť celé číslo od -10 do 250."
+msgstr ""
+
+#: api/class-smartsused-import-template.php
+msgid "Vyberte vlastníka alebo nájomcu z rozbaľovacieho zoznamu."
+msgstr ""
+
+#: api/class-smartsused-import-template.php
+msgid "Neplatný typ rezidenta"
+msgstr ""
+
+#: api/class-smartsused-import-template.php
+msgid "Vyberte hodnotu Vlastník alebo Nájomca."
+msgstr ""
+
+#: includes/class-smartsused-welcome-email.php
+msgid "[SmartSused] Vitajte na portáli vlastníka bytu"
+msgstr ""
+
+#: includes/class-smartsused-welcome-email.php
+msgid "Portál vlastníka bytu"
+msgstr ""
+
+#: includes/class-smartsused-welcome-email.php
+msgid "Vitajte v SmartSused. Ako vlastník bytu máte na jednom mieste prehľad o dôležitých informáciách a správe svojho bývania."
+msgstr ""
+
+#: includes/class-smartsused-welcome-email.php
+msgid "Prostredníctvom portálu môžete sledovať oznamy správcu, zadávať odpočty meradiel, spravovať svojich nájomcov a kontrolovať financie."
+msgstr ""
+
+#: includes/class-smartsused-welcome-email.php
+msgid "[SmartSused] Vitajte v aplikácii pre rezidentov"
+msgstr ""
+
+#: includes/class-smartsused-welcome-email.php
+msgid "Aplikácia pre rezidentov"
+msgstr ""
+
+#: includes/class-smartsused-welcome-email.php
+msgid "Vitajte v SmartSused. Ako nájomcovi bytu vám aplikácia uľahčí každodenné bývanie."
+msgstr ""
+
+#: includes/class-smartsused-welcome-email.php
+msgid "Rýchlo si pozriete dôležité oznamy o odstávkach a priamo z mobilu nahlásite správcovi poruchu, napríklad nefunkčný výťah alebo osvetlenie."
+msgstr ""
+
+#: includes/class-smartsused-welcome-email.php
+msgid "Aktivovať účet a nastaviť heslo"
+msgstr ""
+
+#: includes/class-smartsused-welcome-email.php
+msgid "Pred prvým prihlásením si nastavte heslo cez tento bezpečný odkaz:"
+msgstr ""
+
+#: includes/class-smartsused-welcome-email.php
+msgid "Po nastavení hesla sa prihláste do aplikácie SmartSused."
+msgstr ""
+
+#: includes/class-smartsused-welcome-email.php
+msgid "Prihlasovací e-mail"
+msgstr ""
+
+#: includes/class-smartsused-welcome-email.php
+msgid "Dobrý deň, %s,"
+msgstr ""
+
+#: includes/class-smartsused-welcome-email.php
+msgid "Otvoriť aplikáciu"
+msgstr ""
+
+#: includes/class-smartsused-welcome-email.php
+msgid "Ak ste túto správu neočakávali, môžete ju ignorovať alebo kontaktovať správcu bytového domu."
+msgstr ""
+
+#: api/class-smartsused-owner-management.php
+msgid "Vlastník bol vytvorený a priradený k bytu, ale personalizovaný uvítací e-mail s odkazom na aktiváciu sa nepodarilo odoslať. Skontrolujte nastavenie e-mailov na serveri."
+msgstr ""
+
+#: api/class-smartsused-import-template.php
+msgid "Excel šablónu sa nepodarilo vygenerovať."
+msgstr ""
+
+#: api/class-smartsused-import-template.php
+msgid "Na stiahnutie Excel šablóny musíte byť prihlásený ako správca SmartSused."
+msgstr ""
+
+#: api/class-smartsused-owner-import.php
+msgid "Rola vlastníka alebo nájomcu nie je nakonfigurovaná. Znova aktivujte SmartSused Core."
+msgstr ""
+
+#: api/class-smartsused-owner-import.php
+msgid "Riadok obsahuje nesprávny počet stĺpcov."
+msgstr ""
+
+#: api/class-smartsused-owner-import.php
+msgid "Vyplňte platné meno, priezvisko, e-mail, názov domu, číslo bytu, vchod a typ rezidenta."
+msgstr ""
+
+#: api/class-smartsused-owner-import.php
+msgid "E-mail je príliš dlhý alebo sa už používa ako prihlasovacie meno."
+msgstr ""
+
+#: api/class-smartsused-owner-import.php
+msgid "Používateľský účet sa nepodarilo vytvoriť."
+msgstr ""
+
+#: api/class-smartsused-owner-import.php
+msgid "Existujúci používateľ sa nepodarilo načítať."
+msgstr ""
+
+#: api/class-smartsused-owner-import.php
+msgid "Používateľovi sa nepodarilo priradiť požadovanú rolu rezidenta."
+msgstr ""
+
+#: api/class-smartsused-owner-import.php
+msgid "Telefónne číslo sa nepodarilo uložiť."
+msgstr ""
+
+#: api/class-smartsused-owner-import.php
+msgid "Rezident bol priradený, ale uvítací e-mail sa nepodarilo odoslať."
+msgstr ""
+
+#: api/class-smartsused-owner-import.php
+msgid "Import dokončený. Priradené: %1$d, existujúce vzťahy: %2$d, chybné riadky: %3$d, neodoslané e-maily: %4$d."
+msgstr ""
+
+#: api/class-smartsused-owner-import.php
+msgid "Priradenie rezidenta sa nepodarilo bezpečne rezervovať."
+msgstr ""
+
+#: api/class-smartsused-owner-import.php
+msgid "Vzťah rezidenta k bytovej jednotke sa nepodarilo uložiť."
+msgstr ""
+
+#: api/class-smartsused-owner-import.php
+msgid "vlastníka bytovej jednotky"
+msgstr ""
+
+#: api/class-smartsused-owner-import.php
+msgid "nájomcu bytovej jednotky"
+msgstr ""
+
+#: api/class-smartsused-owner-import.php
+msgid "Váš účet vlastníka SmartSused je pripravený"
+msgstr ""
+
+#: api/class-smartsused-owner-import.php
+msgid "Váš účet nájomcu SmartSused je pripravený"
+msgstr ""
+
+#: api/class-smartsused-owner-import.php
+msgid "Dobrý deň, %1$s,\n\nsprávca vám vytvoril alebo priradil účet ako %2$s v aplikácii SmartSused.\n\nHeslo nastavíte a prihlásite sa cez tento odkaz:\n%3$s\n\nAk ste túto správu neočakávali, kontaktujte správcu."
+msgstr ""
+
+#: api/class-smartsused-owner-import.php
+msgid "Bytový dom s uvedeným názvom sa nenašiel alebo nie je publikovaný."
+msgstr ""
+
+#: api/class-smartsused-owner-import.php
+msgid "Názov bytového domu nie je jednoznačný. Rozlíšte dom úplným názvom."
+msgstr ""
+
+#: api/class-smartsused-owner-import.php
+msgid "Bytová jednotka s uvedeným domom, číslom bytu a vchodom sa nenašla."
+msgstr ""
+
+#: api/class-smartsused-owner-import.php
+msgid "Bytová jednotka nie je jednoznačná. Skontrolujte názov domu, číslo bytu a vchod."
+msgstr ""
+
+#: api/class-smartsused-owner-import.php
+msgid "Na import vlastníkov a nájomcov nemáte oprávnenie."
+msgstr ""

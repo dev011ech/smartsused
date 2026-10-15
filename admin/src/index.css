@@ -1,0 +1,210 @@
+@import "tailwindcss";
+@config "../tailwind.config.js";
+
+:root {
+  font-family: theme(fontFamily.sans);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+  background-color: theme(colors.background);
+  color: theme(colors.primary);
+}
+
+html.dark,
+html.dark body {
+  background-color: #0f172a;
+  color: #e2e8f0;
+}
+
+html.dark .bg-white {
+  background-color: #1e293b;
+}
+
+html.dark .bg-slate-50,
+html.dark .bg-slate-100,
+html.dark .bg-slate-50\/80,
+html.dark .bg-slate-50\/90 {
+  background-color: #1e293b;
+}
+
+html.dark .bg-slate-200 {
+  background-color: #334155;
+}
+
+html.dark .bg-white\/70 {
+  background-color: rgb(30 41 59 / 0.7);
+}
+
+html.dark .bg-blue-50,
+html.dark .bg-blue-100 {
+  background-color: #172554;
+}
+
+html.dark .bg-cyan-50 {
+  background-color: #083344;
+}
+
+html.dark .bg-emerald-50,
+html.dark .bg-emerald-50\/60 {
+  background-color: #064e3b;
+}
+
+html.dark .bg-amber-50 {
+  background-color: #78350f;
+}
+
+html.dark .bg-red-50 {
+  background-color: #7f1d1d;
+}
+
+html.dark .bg-gradient-to-br {
+  background-image: linear-gradient(to bottom right, #0f172a, #1e293b, #0f172a);
+}
+
+html.dark .bg-slate-50\/50,
+html.dark .even\:bg-slate-50\/50:nth-child(even) {
+  background-color: rgb(15 23 42 / 0.55);
+}
+
+html.dark .odd\:bg-white:nth-child(odd) {
+  background-color: #1e293b;
+}
+
+html.dark .text-primary,
+html.dark .text-slate-900,
+html.dark .text-slate-800,
+html.dark .text-blue-950 {
+  color: #f1f5f9;
+}
+
+html.dark .text-slate-700,
+html.dark .text-slate-600,
+html.dark .text-slate-500,
+html.dark .text-slate-400 {
+  color: #cbd5e1;
+}
+
+html.dark .text-blue-700,
+html.dark .text-blue-800,
+html.dark .text-blue-900,
+html.dark .text-blue-950,
+html.dark .text-blue-600,
+html.dark .text-cyan-700,
+html.dark .text-cyan-800,
+html.dark .text-cyan-600 {
+  color: #bfdbfe;
+}
+
+html.dark .text-emerald-700,
+html.dark .text-emerald-800,
+html.dark .text-emerald-900,
+html.dark .text-emerald-950,
+html.dark .text-emerald-600 {
+  color: #a7f3d0;
+}
+
+html.dark .text-amber-800,
+html.dark .text-amber-950,
+html.dark .text-amber-600 {
+  color: #fde68a;
+}
+
+html.dark .text-red-800,
+html.dark .text-red-900,
+html.dark .text-red-950,
+html.dark .text-red-700,
+html.dark .text-red-600 {
+  color: #fecaca;
+}
+
+html.dark .border-slate-100,
+html.dark .border-slate-200,
+html.dark .border-slate-300,
+html.dark .border-slate-400 {
+  border-color: #475569;
+}
+
+html.dark .border-blue-200,
+html.dark .border-blue-300,
+html.dark .border-emerald-200,
+html.dark .border-emerald-300,
+html.dark .border-amber-200,
+html.dark .border-red-200,
+html.dark .border-red-300,
+html.dark .border-red-700,
+html.dark .border-emerald-700 {
+  border-color: #475569;
+}
+
+html.dark input:not([type="checkbox"]):not([type="radio"]),
+html.dark textarea,
+html.dark select,
+html.dark .form-input {
+  border-color: #64748b;
+  background-color: #0f172a;
+  color: #f1f5f9;
+}
+
+html.dark input::placeholder,
+html.dark textarea::placeholder {
+  color: #94a3b8;
+}
+
+html.dark dialog {
+  border-color: #475569;
+  background-color: #1e293b;
+  color: #f1f5f9;
+}
+
+html.dark dialog::backdrop {
+  background-color: rgb(2 6 23 / 0.72);
+}
+
+html.dark .hover\:bg-slate-50:hover,
+html.dark .hover\:bg-slate-100:hover {
+  background-color: #334155;
+}
+
+@keyframes poll-dialog-enter {
+  from {
+    opacity: 0;
+    transform: translateY(0.5rem) scale(0.98);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.poll-dialog[open] > form {
+  animation: poll-dialog-enter 160ms ease-out;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .poll-dialog[open] > form {
+    animation: none;
+  }
+}
+
+button,
+input {
+  font: inherit;
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex min-h-12 items-center justify-center rounded-lg bg-accent px-6 py-3 text-base font-semibold text-white transition-colors hover:bg-emerald-800 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary disabled:cursor-not-allowed disabled:opacity-60;
+  }
+
+  .form-input {
+    @apply min-h-12 w-full rounded-lg border-2 border-slate-400 bg-white px-4 py-3 text-base text-primary placeholder:text-slate-500 focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2;
+  }
+}

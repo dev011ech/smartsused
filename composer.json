@@ -1,0 +1,20 @@
+{
+  "name": "smartsused/core",
+  "description": "Dependencies for the SmartSused WordPress plugin.",
+  "type": "wordpress-plugin",
+  "license": "proprietary",
+  "require": {
+    "php": ">=7.4",
+    "ext-gd": "*",
+    "ext-fileinfo": "*",
+    "ext-zip": "*",
+    "phpoffice/phpspreadsheet": "^1.29"
+  },
+  "config": {
+    "optimize-autoloader": true,
+    "platform": {
+      "php": "7.4.0"
+    },
+    "sort-packages": true
+  }
+}
