@@ -58,7 +58,7 @@ final class SmartSused_Tenant_Invites {
 			array(
 				'methods'             => WP_REST_Server::READABLE,
 				'callback'            => array( $this, 'list_owner_units' ),
-				'permission_callback' => array( $this, 'permission_to_manage_unit' ),
+				'permission_callback' => array( $this, 'permission_to_list_resident_units' ),
 			)
 		);
 
@@ -192,6 +192,63 @@ final class SmartSused_Tenant_Invites {
 	}
 
 	/**
+	 * Allow owners and tenants to list only their own published units.
+	 *
+	 * @param WP_REST_Request $request REST request.
+	 * @return bool|WP_Error
+	 */
+	public function permission_to_list_resident_units( $request ) {
+		$user_id = get_current_user_id();
+		$user    = get_userdata( $user_id );
+
+		if (
+			! ( $user instanceof WP_User )
+			|| ! in_array( 'smartsused_tenant', $user->roles, true )
+		) {
+			return $this->permission_to_manage_unit( $request );
+		}
+
+		$authorization    = $request->get_header( 'authorization' );
+		$verified_user_id = apply_filters( 'smartsused_verified_jwt_user_id', 0, $request );
+
+		if (
+			! is_string( $authorization )
+			|| 1 !== preg_match( '/^Bearer\s+\S+$/i', $authorization )
+			|| ! is_user_logged_in()
+			|| ! is_int( $verified_user_id )
+			|| $verified_user_id !== $user_id
+		) {
+			return self::forbidden_error();
+		}
+
+		$unit_id = absint( $request->get_param( 'unit_id' ) );
+
+		if ( 0 === $unit_id ) {
+			return true;
+		}
+
+		if (
+			'smartsused_unit' !== get_post_type( $unit_id )
+			|| 'publish' !== get_post_status( $unit_id )
+		) {
+			return self::forbidden_error();
+		}
+
+		global $wpdb;
+		$relationship_table = $wpdb->prefix . 'smartsused_unit_relationships';
+		$is_tenant          = $wpdb->get_var(
+			$wpdb->prepare(
+				"SELECT id FROM {$relationship_table} "
+					. "WHERE unit_id = %d AND user_id = %d AND resident_type = 'tenant' LIMIT 1",
+				$unit_id,
+				$user_id
+			)
+		);
+
+		return null !== $is_tenant ? true : self::forbidden_error();
+	}
+
+	/**
 	 * Require an authenticated owner who owns the requested unit.
 	 *
 	 * @param WP_REST_Request $request REST request.
@@ -213,8 +270,21 @@ final class SmartSused_Tenant_Invites {
 		$unit_id = absint( $request->get_param( 'unit_id' ) );
 		$user_id = get_current_user_id();
 		$table   = $wpdb->prefix . 'smartsused_unit_relationships';
+		$user    = get_userdata( $user_id );
+		$is_tenant = $user instanceof WP_User && in_array( 'smartsused_tenant', $user->roles, true );
 
-		if ( $unit_id > 0 ) {
+		if ( $is_tenant ) {
+			$sql  = "SELECT unit_id FROM {$table} WHERE user_id = %d AND resident_type = 'tenant'";
+			$args = array( $user_id );
+
+			if ( $unit_id > 0 ) {
+				$sql   .= ' AND unit_id = %d';
+				$args[] = $unit_id;
+			}
+
+			$sql       .= ' ORDER BY unit_id ASC';
+			$unit_ids   = $wpdb->get_col( $wpdb->prepare( $sql, $args ) );
+		} elseif ( $unit_id > 0 ) {
 			$unit_ids = array( $unit_id );
 		} else {
 			$unit_ids = $wpdb->get_col(
@@ -242,15 +312,17 @@ final class SmartSused_Tenant_Invites {
 				continue;
 			}
 
-			$tenants = $wpdb->get_results(
-				$wpdb->prepare(
-					"SELECT u.ID AS id, u.display_name AS name, u.user_email AS email "
-						. "FROM {$table} r INNER JOIN {$wpdb->users} u ON u.ID = r.user_id "
-						. "WHERE r.unit_id = %d AND r.resident_type = 'tenant' ORDER BY u.display_name ASC",
-					$owned_unit_id
-				),
-				ARRAY_A
-			);
+			$tenants = $is_tenant
+				? array()
+				: $wpdb->get_results(
+					$wpdb->prepare(
+						"SELECT u.ID AS id, u.display_name AS name, u.user_email AS email "
+							. "FROM {$table} r INNER JOIN {$wpdb->users} u ON u.ID = r.user_id "
+							. "WHERE r.unit_id = %d AND r.resident_type = 'tenant' ORDER BY u.display_name ASC",
+						$owned_unit_id
+					),
+					ARRAY_A
+				);
 
 			if ( ! is_array( $tenants ) ) {
 				return self::storage_unavailable_error();

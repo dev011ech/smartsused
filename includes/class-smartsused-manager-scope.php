@@ -338,7 +338,7 @@ final class SmartSused_Manager_Scope {
 			}
 		}
 
-		if ( preg_match( '#^/wp/v2/(smartsused_property|smartsused_unit|smartsused_poll)(?:/(\d+)(?:/.*)?)?$#', $route, $matches ) ) {
+		if ( preg_match( '#^/wp/v2/(smartsused_property|smartsused_unit|smartsused_poll)(?:/(\d+)(?:/.*)?)?/?$#', $route, $matches ) ) {
 			$post_type = $matches[1];
 
 			if ( 'smartsused_property' === $post_type && 'POST' === $method && empty( $matches[2] ) ) {

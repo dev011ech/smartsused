@@ -259,11 +259,17 @@ validuje pri importe.
 Administrácia je rozdelená do samostatných stránok **Bytové domy**
 (`/admin/properties`), **Bytové jednotky** (`/admin/units`) a **Vlastníci**
 (`/admin/owners`). Stránka domov načítava publikované domy cez
-`/wp/v2/smartsused_property`; správca ich môže pridávať/upravovať ručne alebo
-importovať CSV `nazov_domu;adresa`. Jednotky sa spravujú samostatne a obsahujú
+`/wp/v2/smartsused_property`; tieto štandardné CPT trasy sú dostupné iba
+administrátorom a manažérom s overeným JWT, pričom manažéri vidia iba priradené
+domy. Správca ich môže pridávať/upravovať ručne alebo importovať CSV
+`nazov_domu;adresa`. Jednotky sa spravujú samostatne a obsahujú
 filter podľa domu. REST polia `property_id`, `floor` a `entrance` na jednotke
 mapujú ID domu na `post_parent` a hodnoty poschodia/vchodu na postmeta
 `_poschodie` a `_vchod`. Dom musí byť publikovaný.
+
+Rezidentský formulár porúch načítava iba vlastné bytové jednotky z
+`GET /smartsused/v1/tenant/units`; štandardné CPT REST trasy sú pre vlastníkov
+a nájomcov zakázané.
 
 Na stránke vlastníkov je vyhľadateľný zoznam vlastníkov a ich bytov, spoločný
 Excel/CSV import obyvateľov a formulár **Pridať vlastníka manuálne**. Formulár načíta domy z WordPress REST

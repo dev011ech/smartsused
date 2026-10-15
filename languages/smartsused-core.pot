@@ -677,6 +677,14 @@ msgid "Nemáte oprávnenie upraviť túto bytovú jednotku."
 msgstr ""
 
 #: includes/class-smartsused-core.php
+msgid "Na zobrazenie bytových domov a jednotiek sa prihláste."
+msgstr ""
+
+#: includes/class-smartsused-core.php
+msgid "Na štandardné REST trasy bytových domov a jednotiek nemáte oprávnenie."
+msgstr ""
+
+#: includes/class-smartsused-core.php
 msgid "Vybraný bytový dom neexistuje alebo nie je publikovaný."
 msgstr ""
 

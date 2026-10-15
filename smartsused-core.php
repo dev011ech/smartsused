@@ -2,7 +2,7 @@
 /**
  * Plugin Name: SmartSused Core
  * Description: Základná funkcionalita pre správu bytových domov a jednotiek.
- * Version: 1.0.23
+ * Version: 1.0.24
  * Requires at least: 6.0
  * Requires PHP: 7.4
  * Author: SmartSused
@@ -14,7 +14,7 @@
 
 defined( 'ABSPATH' ) || exit;
 
-define( 'SMARTSUSED_CORE_VERSION', '1.0.23' );
+define( 'SMARTSUSED_CORE_VERSION', '1.0.24' );
 define( 'SMARTSUSED_CORE_FILE', __FILE__ );
 define( 'SMARTSUSED_CORE_PATH', plugin_dir_path( __FILE__ ) );
 define( 'SMARTSUSED_CORE_URL', plugin_dir_url( __FILE__ ) );

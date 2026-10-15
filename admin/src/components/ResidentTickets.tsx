@@ -16,10 +16,7 @@ type Ticket = {
 
 type UnitOption = {
   id: number;
-  title?: { rendered?: string; raw?: string };
-  name?: string;
-  slug?: string;
-  unit_number?: string;
+  title: string;
 };
 
 type FormState = {
@@ -95,10 +92,8 @@ export function ResidentTickets() {
 
   const loadUnits = async () => {
     try {
-      const response = await apiClient.get<UnitOption[]>("wp/v2/smartsused_unit", {
-        params: { per_page: 100, context: "view" },
-      });
-      setUnits(Array.isArray(response.data) ? response.data : []);
+      const response = await apiClient.get<{ units?: UnitOption[] }>("smartsused/v1/tenant/units");
+      setUnits(Array.isArray(response.data.units) ? response.data.units : []);
     } catch {
       setUnits([]);
     }
@@ -198,10 +193,9 @@ export function ResidentTickets() {
           >
             <option value="">Vyberte byt</option>
             {units.map((unit) => {
-              const title = unit.title?.rendered || unit.title?.raw || unit.name || unit.slug || `Byt ${unit.id}`;
               return (
                 <option key={unit.id} value={String(unit.id)}>
-                  {title}
+                  {unit.title || `Byt ${unit.id}`}
                 </option>
               );
             })}

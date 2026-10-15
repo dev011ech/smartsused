@@ -39,6 +39,8 @@ final class SmartSused_Core {
 		add_action( 'init', array( $this, 'register_post_types' ) );
 		add_action( 'add_meta_boxes_smartsused_unit', array( $this, 'register_unit_property_meta_box' ) );
 		add_action( 'save_post_smartsused_unit', array( $this, 'save_unit_property' ), 10, 2 );
+		add_filter( 'user_has_cap', array( $this, 'grant_administrator_post_type_capabilities' ), 10, 4 );
+		add_filter( 'rest_pre_dispatch', array( $this, 'authorize_private_post_type_rest' ), 20, 3 );
 	}
 
 	/**
@@ -89,9 +91,13 @@ final class SmartSused_Core {
 					'remove_featured_image' => __( 'Odstrániť obrázok objektu', 'smartsused-core' ),
 					'use_featured_image'    => __( 'Použiť ako obrázok objektu', 'smartsused-core' ),
 				),
-				'public'              => true,
+				'public'              => false,
+				'publicly_queryable'  => false,
+				'show_ui'             => true,
 				'show_in_rest'        => true,
-				'has_archive'         => true,
+				'has_archive'         => false,
+				'exclude_from_search' => true,
+				'rewrite'             => false,
 				'hierarchical'        => false,
 				'menu_icon'           => 'dashicons-building',
 				'supports'            => array( 'title', 'editor', 'thumbnail', 'excerpt' ),
@@ -123,9 +129,13 @@ final class SmartSused_Core {
 					'remove_featured_image' => __( 'Odstrániť obrázok jednotky', 'smartsused-core' ),
 					'use_featured_image'    => __( 'Použiť ako obrázok jednotky', 'smartsused-core' ),
 				),
-				'public'              => true,
+				'public'              => false,
+				'publicly_queryable'  => false,
+				'show_ui'             => true,
 				'show_in_rest'        => true,
-				'has_archive'         => true,
+				'has_archive'         => false,
+				'exclude_from_search' => true,
+				'rewrite'             => false,
 				'hierarchical'        => false,
 				'menu_icon'           => 'dashicons-admin-home',
 				'supports'            => array( 'title', 'editor', 'thumbnail', 'excerpt', 'page-attributes' ),
@@ -150,6 +160,112 @@ final class SmartSused_Core {
 
 		$this->register_unit_meta_rest_field( 'floor', '_poschodie', __( 'Poschodie jednotky.', 'smartsused-core' ) );
 		$this->register_unit_meta_rest_field( 'entrance', '_vchod', __( 'Vchod jednotky.', 'smartsused-core' ) );
+	}
+
+	/**
+	 * Keep administrator access to the custom post types when their public
+	 * visibility is disabled, without granting these capabilities to residents.
+	 *
+	 * @param array   $allcaps All capabilities for the user.
+	 * @param array   $caps    Required primitive capabilities.
+	 * @param array   $args    Capability check arguments.
+	 * @param WP_User $user    User being checked.
+	 * @return array
+	 */
+	public function grant_administrator_post_type_capabilities( $allcaps, $caps, $args, $user ) {
+		unset( $caps, $args );
+
+		if (
+			! ( $user instanceof WP_User )
+			|| ! in_array( 'administrator', $user->roles, true )
+			|| empty( $allcaps['manage_options'] )
+		) {
+			return $allcaps;
+		}
+
+		foreach ( array( 'smartsused_property', 'smartsused_unit' ) as $post_type ) {
+			$post_type_object = get_post_type_object( $post_type );
+
+			if ( ! ( $post_type_object instanceof WP_Post_Type ) ) {
+				continue;
+			}
+
+			$meta_capabilities = array(
+				$post_type_object->cap->read_post,
+				$post_type_object->cap->edit_post,
+				$post_type_object->cap->delete_post,
+			);
+
+			foreach ( get_object_vars( $post_type_object->cap ) as $capability ) {
+				if (
+					is_string( $capability )
+					&& '' !== $capability
+					&& ! in_array( $capability, $meta_capabilities, true )
+				) {
+					$allcaps[ $capability ] = true;
+				}
+			}
+		}
+
+		return $allcaps;
+	}
+
+	/**
+	 * Restrict the standard REST endpoints for properties and units.
+	 *
+	 * JWT authentication runs before rest_pre_dispatch, so the current user and
+	 * verified identity are available here. Manager requests continue to the
+	 * existing manager-scope filter before the REST controller runs.
+	 *
+	 * @param mixed           $result  Existing REST response.
+	 * @param WP_REST_Server  $server  REST server.
+	 * @param WP_REST_Request $request REST request.
+	 * @return mixed|WP_Error
+	 */
+	public function authorize_private_post_type_rest( $result, $server, $request ) {
+		unset( $server );
+
+		if (
+			null !== $result
+			|| ! preg_match(
+				'#^/wp/v2/(?:smartsused_property|smartsused_unit)(?:/|$)#',
+				$request->get_route()
+			)
+		) {
+			return $result;
+		}
+
+		if ( ! is_user_logged_in() ) {
+			return new WP_Error(
+				'smartsused_cpt_rest_authentication_required',
+				__( 'Na zobrazenie bytových domov a jednotiek sa prihláste.', 'smartsused-core' ),
+				array( 'status' => 401 )
+			);
+		}
+
+		$user = wp_get_current_user();
+
+		if (
+			$user instanceof WP_User
+			&& in_array( 'administrator', $user->roles, true )
+			&& current_user_can( 'manage_options' )
+		) {
+			return $result;
+		}
+
+		if ( $user instanceof WP_User && in_array( 'smartsused_manager', $user->roles, true ) ) {
+			$verified_user_id = apply_filters( 'smartsused_verified_jwt_user_id', 0, $request );
+
+			if ( is_int( $verified_user_id ) && $verified_user_id === (int) $user->ID ) {
+				return $result;
+			}
+		}
+
+		return new WP_Error(
+			'smartsused_cpt_rest_forbidden',
+			__( 'Na štandardné REST trasy bytových domov a jednotiek nemáte oprávnenie.', 'smartsused-core' ),
+			array( 'status' => 403 )
+		);
 	}
 
 	/**

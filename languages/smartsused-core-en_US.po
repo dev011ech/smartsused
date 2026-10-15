@@ -397,6 +397,14 @@ msgid "Nemáte oprávnenie upraviť túto bytovú jednotku."
 msgstr "You are not allowed to edit this unit."
 
 #: includes/class-smartsused-core.php
+msgid "Na zobrazenie bytových domov a jednotiek sa prihláste."
+msgstr "Please sign in to view apartment buildings and units."
+
+#: includes/class-smartsused-core.php
+msgid "Na štandardné REST trasy bytových domov a jednotiek nemáte oprávnenie."
+msgstr "You are not allowed to access the standard apartment building and unit REST routes."
+
+#: includes/class-smartsused-core.php
 msgid "Vybraný bytový dom neexistuje alebo nie je publikovaný."
 msgstr "The selected apartment building does not exist or is not published."
 
